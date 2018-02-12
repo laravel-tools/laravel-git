@@ -1,12 +1,11 @@
 <?php
 
-namespace LaravelTools\LaravelGit\Git;
+namespace LaravelTools\LaravelGit;
 
-class GitRepository
+class Git
 {
 	protected $repository;
 	protected $cwd;
-
 
 	/**
 	 * @param  string
@@ -25,7 +24,6 @@ class GitRepository
 			throw new GitException("Repository '$repository' not found.");
 		}
 	}
-
 
 	/**
 	 * @return string
@@ -738,9 +736,8 @@ class GitRepository
 	 */
 	public static function extractRepositoryNameFromUrl($url)
 	{
-		// /path/to/repo.git => repo
-		// host.xz:foo/.git => foo
 		$directory = rtrim($url, '/');
+
 		if(substr($directory, -5) === '/.git')
 		{
 			$directory = substr($directory, 0, -5);
@@ -759,8 +756,10 @@ class GitRepository
 
 	/**
 	 * Is path absolute?
+	 * 
 	 * Method from Nette\Utils\FileSystem
 	 * @link   https://github.com/nette/nette/blob/master/Nette/Utils/FileSystem.php
+	 * 
 	 * @return bool
 	 */
 	public static function isAbsolute($path)
