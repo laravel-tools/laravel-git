@@ -23,10 +23,7 @@
     "autoload-dev": {
         "classmap": [
             "tests/TestCase.php"
-        ],
-        "psr-4": {
-          "LaravelTools\\LaravelGit\\Test\\": "tests"
-        }
+        ]
     },
     "extra": {
         "laravel": {
