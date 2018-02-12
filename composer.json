@@ -34,7 +34,7 @@
                 "LaravelTools\\LaravelGit\\LaravelGitServiceProvider"
             ],
             "aliases": {
-                "Git": "LaravelTools\\LaravelGit\\Facades\\GitFacade"
+                "Git": "LaravelTools\\LaravelGit\\Facades\\Git"
             }
         }
     },

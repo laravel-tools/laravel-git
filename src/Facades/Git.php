@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Facade;
 /**
  * Class Git.
  */
-class GitFacade extends Facade
+class Git extends Facade
 {
     /**
      * @return string
