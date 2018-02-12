@@ -1,0 +1,30 @@
+{
+    "name": "laravel-tools/laravel-git",
+    "description": "A Laravel package for running Git commands",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Scott",
+            "email": "codetheorist@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
+    },
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": "5.5.*",
+        "orchestra/testbench": "3.5.*"      
+    }
+}
