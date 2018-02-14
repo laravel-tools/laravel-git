@@ -5,4 +5,8 @@
             <directory suffix="Test.php">./tests</directory>
         </testsuite>
     </testsuites>
+    <php>
+        <env name="DB_NAME" value="testing"/>
+        <env name="DB_CONNECTION" value="testing"/>
+    </php>
 </phpunit>

@@ -4,6 +4,23 @@ use Orchestra\Testbench\TestCase as BaseTestCase;
 
 class TestCase extends BaseTestCase
 {
+    /**
+     * Setup the test environment.
+     */
+    protected function setUp()
+    {
+        parent::setUp();
+
+        // Your code here
+    }
+
+    protected function getPackageAliases($app)
+    {
+        return [
+            'Git' => 'LaravelTools\\LaravelGit\\Facades\\Git'
+        ];
+    }
+
     protected function getPackageProviders($app)
     {
         return [LaravelTools\LaravelGit\LaravelGitServiceProvider::class];
